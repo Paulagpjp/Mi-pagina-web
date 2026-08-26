@@ -7,3 +7,31 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+# Netlify inyecta un <script> suyo (el "HUD") dentro del <body>. Como el App
+# Router de Next hidrata el <body> entero, ese nodo extra rompe la hidratación
+# de React (errores #418 y #423) y la página se vuelve a renderizar entera en
+# el cliente. Desactivando el post-procesado no se inyecta nada. Los assets ya
+# vienen minificados y optimizados del build, así que no perdemos nada.
+[build.processing]
+  skip_processing = true
+
+# Los archivos de /_next/static/ llevan un hash en el nombre: si cambia el
+# contenido, cambia la URL. Se pueden cachear para siempre. Por defecto Netlify
+# los servía con max-age=0, obligando a revalidar en cada visita.
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Las imágenes de /public no llevan hash: caché corta y revalidación, para que
+# al cambiar la foto no se quede la vieja pegada en el navegador de nadie.
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/og.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, stale-while-revalidate=86400"
