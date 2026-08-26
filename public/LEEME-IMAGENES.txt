@@ -1,0 +1,22 @@
+IMÁGENES DEL PORTAFOLIO
+=======================
+
+Guarda aquí tus archivos con EXACTAMENTE estos nombres:
+
+  paula.jpeg
+      Tu foto de perfil (la del retrato vertical).
+      Ideal: vertical, mínimo 900 x 1200 px.
+
+Después de copiar una foto nueva, ejecuta en la terminal:
+
+  npm run optimize:images
+
+Eso la convierte a .webp (pesa ~3 veces menos y carga mucho más rápido)
+y borra el original. La web ya apunta al .webp.
+
+Mientras no estén, la web muestra un placeholder con diseño
+(no se rompe nada). En cuanto copies los archivos, aparecen solas.
+
+Ya incluidas, no hace falta tocarlas:
+  og.jpg   → la imagen 1200 x 630 que se ve al compartir el link por
+             WhatsApp, LinkedIn o X. Está enganchada en app/layout.tsx.

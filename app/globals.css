@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-cream text-ink font-sans;
+  }
+
+  ::selection {
+    @apply bg-magenta text-white;
+  }
+}
+
+@layer components {
+  /* Big editorial headline, tight and loud */
+  .display {
+    @apply font-display uppercase leading-[0.86] tracking-[-0.02em];
+  }
+
+  /* Section eyebrow label */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em];
+  }
+
+  /* Hard-shadow "sticker" card, the signature of the whole layout */
+  .sticker {
+    @apply rounded-3xl border-[3px] border-ink shadow-[8px_8px_0_0_#0B0B12];
+  }
+
+  .sticker-sm {
+    @apply rounded-2xl border-2 border-ink shadow-[5px_5px_0_0_#0B0B12];
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-[3px] border-ink px-7 py-4
+           text-sm font-extrabold uppercase tracking-[0.12em] transition-all duration-150
+           shadow-[6px_6px_0_0_#0B0B12] hover:-translate-y-0.5 hover:shadow-[9px_9px_0_0_#0B0B12]
+           active:translate-y-0.5 active:shadow-[3px_3px_0_0_#0B0B12];
+  }
+
+  .btn-magenta {
+    @apply btn bg-magenta text-white;
+  }
+
+  .btn-ink {
+    @apply btn bg-ink text-cream;
+  }
+
+  .btn-lime {
+    @apply btn bg-lime text-ink;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent text-ink;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full border-2 border-ink bg-white px-4 py-2
+           text-xs font-bold uppercase tracking-[0.1em];
+  }
+
+  .section {
+    @apply mx-auto w-full max-w-[1200px] px-5 sm:px-8;
+  }
+}
+
+/* Marquee: duplicate the content inside and it loops seamlessly */
+.marquee-track {
+  display: flex;
+  width: max-content;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none !important;
+  }
+  .animate-float,
+  .animate-spin-slow {
+    animation: none !important;
+  }
+}
+
+/* Halftone dot texture used behind a few dark blocks */
+.dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.16) 1.5px, transparent 1.5px);
+  background-size: 14px 14px;
+}
+
+.dots-ink {
+  background-image: radial-gradient(rgba(11, 11, 18, 0.14) 1.5px, transparent 1.5px);
+  background-size: 14px 14px;
+}
+
+/* Reveal arranca en opacity:0 y lo revela el IntersectionObserver. Sin JS eso
+   dejaría la página casi en blanco, así que <noscript> en el <head> lo anula. */
+.reveal-static {
+  opacity: 1 !important;
+  transform: none !important;
+}
