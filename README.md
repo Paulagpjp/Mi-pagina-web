@@ -76,7 +76,9 @@ vercel
 
 ### Netlify
 
-Build command `npm run build`, y añade el plugin oficial `@netlify/plugin-nextjs`.
+Ya está configurado en `netlify.toml` (build `npm run build`, publish `out`).
+Importa el repo y listo — **no** hace falta el plugin `@netlify/plugin-nextjs`,
+porque el sitio se exporta como HTML estático.
 
 ---
 
@@ -115,11 +117,19 @@ scripts/
   optimize-images.mjs  convierte /public a webp — npm run optimize:images
 ```
 
-## Antes de publicar: el dominio
+## Cómo se publica
+
+El sitio es una sola página sin servidor, así que `next.config.mjs` lleva
+`output: "export"`: `npm run build` escupe HTML plano en `out/`, que sirve
+cualquier hosting sin runtime de Node ni funciones serverless.
+
+Efecto secundario: **`npm start` ya no existe**. Para ver el build, `npm run preview`.
+
+### El dominio
 
 La URL canónica, el sitemap y la imagen de Open Graph salen de `lib/site.ts`.
-En Vercel se resuelve solo con la URL del proyecto; en cuanto conectes un dominio
-propio, añade la variable de entorno:
+En Vercel y en Netlify se resuelve solo con la URL del proyecto; en cuanto
+conectes un dominio propio, añade la variable de entorno:
 
 ```
 NEXT_PUBLIC_SITE_URL=https://tudominio.com
@@ -144,8 +154,8 @@ escritorio 100 / 100 / 100 / 100**.
 ### Volver a auditar
 
 ```bash
-npm run build
-npm start -- -p 3005
+npm run build     # genera out/
+npm run preview   # sirve out/ en http://localhost:3005
 npx lighthouse http://localhost:3005 --view                  # móvil
 npx lighthouse http://localhost:3005 --preset=desktop --view # escritorio
 ```

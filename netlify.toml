@@ -1,0 +1,9 @@
+# El sitio se exporta como HTML estático (next.config.mjs → output: "export"),
+# así que Netlify solo tiene que servir la carpeta out/. No hace falta el
+# plugin de Next.js ni ninguna función serverless.
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
