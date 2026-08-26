@@ -8,11 +8,14 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Netlify inyecta un <script> suyo (el "HUD") dentro del <body>. Como el App
-# Router de Next hidrata el <body> entero, ese nodo extra rompe la hidratación
-# de React (errores #418 y #423) y la página se vuelve a renderizar entera en
-# el cliente. Desactivando el post-procesado no se inyecta nada. Los assets ya
-# vienen minificados y optimizados del build, así que no perdemos nada.
+# NOTA (26 ago 2026): Netlify inyecta en el <head> de cada página un comentario
+# HTML y dos <meta> de atribución (hosting-provider / netlify-deploy). El App
+# Router de Next hidrata el documento entero, así que esos nodos extra rompen la
+# hidratación de React (#418 → #423) y la página se re-renderiza en cliente.
+# Verificado por bisección: el mismo out/ servido en local da 100 en buenas
+# prácticas y cero errores; basta con añadir el comentario O los <meta> para
+# reproducir los 4 errores. skip_processing NO lo desactiva y no hay opción
+# documentada para hacerlo. En Vercel no ocurre.
 [build.processing]
   skip_processing = true
 
