@@ -36,8 +36,13 @@ export default function Contact() {
               <a href={`mailto:${contact.email}`} className="btn-ink">
                 Enviar un correo
               </a>
-              <a href={contact.cv} download className="btn bg-amber text-ink">
-                Descargar hoja de vida
+              <a
+                href={contact.cv}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn bg-amber text-ink"
+              >
+                Ver hoja de vida
               </a>
             </div>
 

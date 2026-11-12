@@ -63,8 +63,13 @@ export default function Hero() {
             <a href="#experiencia" className="btn-ghost bg-white">
               Ver mi trabajo
             </a>
-            <a href={contact.cv} download className="btn-ghost bg-amber">
-              Hoja de vida ↓
+            <a
+              href={contact.cv}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost bg-amber"
+            >
+              Ver hoja de vida ↗
             </a>
           </div>
 
