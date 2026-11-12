@@ -232,10 +232,10 @@ export const brands = [
     tone: "magenta",
   },
   {
-    name: "Fácil Crédito",
+    name: "FacilCredit",
     handle: "@facilcreditoficial",
     instagram: "https://www.instagram.com/facilcreditoficial/",
-    logo: null,
+    logo: { src: "/marcas/facilcredit.webp", w: 480, h: 106, dark: false },
     place: "Servicios financieros",
     status: "activa",
     summary:
