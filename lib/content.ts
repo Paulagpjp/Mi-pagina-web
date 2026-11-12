@@ -7,7 +7,7 @@ export const profile = {
   name: "Paula PG",
   shortName: "Paula",
   role: "Community Manager · Estrategia de contenido · Redes sociales",
-  location: "Bogotá, Colombia · Trabajo remoto",
+  location: "Bogotá, Colombia · Remoto o híbrido",
   tagline: ["Contenido", "que conecta,", "marcas que", "conversan."],
   intro:
     "Soy Paula, Community Manager en Mindmarks Agency. Diseño y ejecuto la estrategia de contenido, escribo guiones y copys, gestiono la comunidad y mido cada cuenta para ajustar lo que no funciona. Hoy llevo marcas en Colombia y Panamá.",
@@ -21,7 +21,7 @@ export const contact = {
   whatsapp: "573007909522",
   whatsappLabel: "+57 300 790 9522",
   whatsappMessage:
-    "Hola Paula, vi tu portafolio y quiero hablar sobre un proyecto.",
+    "Hola Paula, vi tu portafolio y me gustaría hablar contigo.",
   email: "paulapjpg@gmail.com",
   linkedin: "https://www.linkedin.com/in/paulapjpg/",
   cv: "/HV_Paula_Penagos_CM.pdf",
@@ -271,7 +271,7 @@ export const brands = [
     logo: { src: "/marcas/medispro.webp", w: 480, h: 309, dark: false },
     place: "Insumos médicos",
     status: "lanzamiento",
-    summary: "Empresa de insumos médicos.",
+    summary: "Marca de insumos médicos en lanzamiento digital.",
     bullets: [
       "Community management: contenido, parrilla y posicionamiento de la marca en redes",
     ],
@@ -290,6 +290,30 @@ export const brands = [
       "Contenido para dar a conocer sus talleres y eventos",
     ],
     tone: "amber",
+  },
+] as const;
+
+/** Formación: sin horas, solo qué estudió (pedido de Tomás). */
+export const education = [
+  {
+    title: "Profesional en Marketing Digital",
+    org: "Universidad Internacional del Ecuador",
+    period: "En curso",
+  },
+  {
+    title: "Reelvolution · Creación de contenido con IA",
+    org: "IA University",
+    period: "2026",
+  },
+  {
+    title: "Curso de Agentes de IA",
+    org: "IA University",
+    period: "2026",
+  },
+  {
+    title: "IA sin Límites · Inteligencia artificial y nube",
+    org: "AWS Entrena Bogotá",
+    period: "En curso",
   },
 ] as const;
 
@@ -352,6 +376,6 @@ export const faqs = [
   },
   {
     q: "¿Dónde entra la inteligencia artificial?",
-    a: "Estudié Marketing Digital y me formé en marketing con inteligencia artificial. La uso para crear contenido más rápido y automatizar redes, pero la estrategia, el tono y lo que se publica los decido yo.",
+    a: "Estudio Marketing Digital y me formé en marketing con inteligencia artificial. La uso para crear contenido más rápido y automatizar redes, pero la estrategia, el tono y lo que se publica los decido yo.",
   },
 ] as const;

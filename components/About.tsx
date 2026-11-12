@@ -26,7 +26,7 @@ export default function About() {
           eyebrow="Sobre mí"
           title="No solo publico."
           accent="Hago que tu marca converse."
-          lead="Estudié Marketing Digital y me formé en marketing con inteligencia artificial, que uso para crear contenido y automatizar redes. Antes pasé años en atención al cliente y administración: sé lo que es responderle a una persona a tiempo, y eso hago con la comunidad de cada marca."
+          lead="Estudio Marketing Digital y me formé en marketing con inteligencia artificial, que uso para crear contenido y automatizar redes. Antes pasé años en atención al cliente y administración: sé lo que es responderle a una persona a tiempo, y eso hago con la comunidad de cada marca."
         />
       </Reveal>
 

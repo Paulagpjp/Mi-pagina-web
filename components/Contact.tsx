@@ -10,18 +10,16 @@ export default function Contact() {
 
           <div className="relative mx-auto max-w-3xl text-center">
             <span className="eyebrow justify-center opacity-80">
-              Recibiendo nuevos proyectos
+              Abierta a nuevas oportunidades
             </span>
 
             <h2 className="display mt-5 text-[3rem] leading-[0.9] sm:text-[5rem]">
-              Hablemos de
-              <br />
-              tu marca.
+              Hablemos.
             </h2>
 
             <p className="mx-auto mt-6 max-w-xl text-lg font-medium text-white/90">
-              Sin formularios eternos y sin compromiso. Escríbeme, me cuentas cómo
-              está tu marca en redes y te digo con honestidad cómo puedo ayudarte.
+              Si buscas una Community Manager para tu equipo o tu marca, escríbeme.
+              Te respondo por WhatsApp o por correo.
             </p>
 
             <div className="mt-10 flex flex-wrap justify-center gap-4">

@@ -1,13 +1,13 @@
 import Reveal from "./Reveal";
 import SectionHead from "./SectionHead";
-import { career } from "@/lib/content";
+import { career, education } from "@/lib/content";
 
 export default function Career() {
   return (
     <section id="trayectoria" className="section py-24 sm:py-32">
       <Reveal>
         <SectionHead
-          eyebrow="Trayectoria"
+          eyebrow="Trayectoria y formación"
           title="Antes de las redes,"
           accent="la operación."
           lead="Más de seis años en cargos administrativos y comerciales. De ahí traigo la organización, el servicio al cliente y el trato con gerencia que hoy sostienen cada parrilla."
@@ -30,6 +30,24 @@ export default function Career() {
           </li>
         ))}
       </ol>
+
+      <Reveal>
+        <h3 className="eyebrow mt-16 text-magenta">
+          <span className="h-[3px] w-6 bg-current" />
+          Formación
+        </h3>
+      </Reveal>
+      <div className="mt-6 grid gap-5 sm:grid-cols-2">
+        {education.map((e, i) => (
+          <Reveal key={e.title} delay={(i % 2) * 80} className="h-full">
+            <div className={`sticker-sm h-full p-6 ${i === 0 ? "bg-amber" : "bg-white"}`}>
+              <p className={`eyebrow ${i === 0 ? "text-ink" : "text-magenta"}`}>{e.period}</p>
+              <p className="display mt-2 text-[1.6rem] leading-tight">{e.title}</p>
+              <p className="mt-2 text-sm font-bold opacity-70">{e.org}</p>
+            </div>
+          </Reveal>
+        ))}
+      </div>
     </section>
   );
 }

@@ -60,11 +60,10 @@ export default function Services() {
           <div className="mt-14 flex flex-col items-start gap-6 rounded-3xl border-[3px] border-lime bg-lime/10 p-8 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="display text-2xl sm:text-3xl">
-                ¿No sabes cuál necesitas?
+                ¿Buscas una Community Manager?
               </p>
               <p className="mt-2 max-w-lg text-[15px] font-medium text-cream/75">
-                Cuéntame en dos líneas cómo está tu marca en redes y te digo por
-                dónde empezaría.
+                Cuéntame sobre la marca o la vacante y conversamos.
               </p>
             </div>
             <a
@@ -73,7 +72,7 @@ export default function Services() {
               rel="noopener noreferrer"
               className="btn-lime shrink-0"
             >
-              Contarle mi caso
+              Escribirme
             </a>
           </div>
         </Reveal>

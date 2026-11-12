@@ -36,7 +36,7 @@ export default function Home() {
         <Career />
 
         <Marquee
-          words={["Disponible para proyectos", "Recibiendo nuevos clientes", "Trabajo remoto"]}
+          words={["Abierta a nuevas oportunidades", "Community Manager", "Bogotá · Remoto o híbrido"]}
           className="bg-lime text-ink"
           speed="animate-marquee-fast"
           starColor="text-magenta"
