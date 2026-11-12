@@ -12,10 +12,10 @@ export default function Services() {
         <Reveal>
           <SectionHead
             invert
-            eyebrow="Servicios freelance"
+            eyebrow="Servicios"
             title="Lo que puedo"
             accent="hacer por ti."
-            lead="Trabajo por proyecto, con alcance y fechas definidas desde el primer día. Puedes contratar una sola cosa de esta lista o el paquete completo."
+            lead="Gestión de redes completa o por partes: desde la estrategia hasta el informe de métricas. La inteligencia artificial me ayuda a producir más y mejor, nunca reemplaza el criterio."
           />
         </Reveal>
 
@@ -63,8 +63,8 @@ export default function Services() {
                 ¿No sabes cuál necesitas?
               </p>
               <p className="mt-2 max-w-lg text-[15px] font-medium text-cream/75">
-                Cuéntame el problema en dos líneas y te digo si se resuelve con un
-                agente, con una automatización o con nada de esto.
+                Cuéntame en dos líneas cómo está tu marca en redes y te digo por
+                dónde empezaría.
               </p>
             </div>
             <a

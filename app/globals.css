@@ -20,7 +20,7 @@
 @layer components {
   /* Big editorial headline, tight and loud */
   .display {
-    @apply font-display uppercase leading-[0.86] tracking-[-0.02em];
+    @apply font-display uppercase leading-[1] tracking-[-0.02em];
   }
 
   /* Section eyebrow label */

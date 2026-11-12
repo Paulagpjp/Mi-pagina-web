@@ -14,14 +14,14 @@ export default function Contact() {
             </span>
 
             <h2 className="display mt-5 text-[3rem] leading-[0.9] sm:text-[5rem]">
-              Cuéntame qué
+              Hablemos de
               <br />
-              quieres automatizar.
+              tu marca.
             </h2>
 
             <p className="mx-auto mt-6 max-w-xl text-lg font-medium text-white/90">
-              Sin formularios eternos y sin compromiso. Escríbeme, me cuentas el caso
-              y te digo con honestidad si puedo ayudarte y cuánto tomaría.
+              Sin formularios eternos y sin compromiso. Escríbeme, me cuentas cómo
+              está tu marca en redes y te digo con honestidad cómo puedo ayudarte.
             </p>
 
             <div className="mt-10 flex flex-wrap justify-center gap-4">
@@ -35,6 +35,9 @@ export default function Contact() {
               </a>
               <a href={`mailto:${contact.email}`} className="btn-ink">
                 Enviar un correo
+              </a>
+              <a href={contact.cv} download className="btn bg-amber text-ink">
+                Descargar hoja de vida
               </a>
             </div>
 

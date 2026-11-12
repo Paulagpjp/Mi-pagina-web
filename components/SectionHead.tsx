@@ -20,7 +20,7 @@ export default function SectionHead({
         {eyebrow}
       </span>
 
-      <h2 className="display mt-4 text-[2.6rem] sm:text-[4rem] lg:text-[4.6rem]">
+      <h2 className="display mt-4 text-[2.6rem] leading-[1.05] sm:text-[4rem] lg:text-[4.6rem]">
         {title}{" "}
         {accent && (
           <span className={invert ? "text-lime" : "text-magenta"}>{accent}</span>

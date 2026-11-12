@@ -1,4 +1,4 @@
-import { contact, profile } from "@/lib/content";
+import { contact, profile, whatsappUrl } from "@/lib/content";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -29,22 +29,12 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href={contact.instagram}
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-magenta"
               >
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a
-                href={contact.zakumi}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-magenta"
-              >
-                ZAKUMI Studio
+                WhatsApp
               </a>
             </li>
             <li>
@@ -62,7 +52,7 @@ export default function Footer() {
           <p>
             © {year} {profile.name}
           </p>
-          <p>IA · Software · Gestión de proyectos</p>
+          <p>Contenido · Comunidad · Métricas</p>
         </div>
       </div>
     </footer>

@@ -1,8 +1,8 @@
 # Portafolio — Paula Penagos Gómez
 
-Portafolio personal de una sola página: perfil, servicios freelance, proyecto ZAKUMI Studio, stack tecnológico y gestión de proyectos.
+Portafolio personal de una sola página: perfil de Community Manager, servicios, marcas que maneja, método, trayectoria y herramientas.
 
-Stack: **Next.js 14 (App Router) + TypeScript + Tailwind CSS**. Sin dependencias externas de UI.
+Tecnología: **Next.js 14 (App Router) + TypeScript + Tailwind CSS**. Sin dependencias externas de UI.
 
 ---
 
@@ -47,12 +47,14 @@ LinkedIn o X. Ya está hecha; solo hay que rehacerla si cambias el titular.
 ```
 lib/content.ts
 ├── profile          → nombre, rol, titular del hero, bio
-├── contact          → WhatsApp, correo, LinkedIn, Instagram
+├── contact          → WhatsApp, correo, LinkedIn
 ├── stats            → las 4 cifras grandes
-├── services         → los 6 servicios freelance
+├── services         → los 6 servicios
 ├── process          → los 4 pasos de tu metodología
-├── techGroups       → tecnologías agrupadas por categoría
-├── projects         → ZAKUMI (añade más objetos para más proyectos)
+├── techGroups       → herramientas agrupadas por categoría
+├── marqueeWords     → palabras de la cinta
+├── agency, brands   → Mindmarks Agency y las marcas (con su Instagram)
+├── career           → trayectoria administrativa
 └── faqs             → preguntas frecuentes
 ```
 
@@ -99,10 +101,11 @@ components/
   Hero.tsx         portada
   Marquee.tsx      cintas de texto en movimiento
   About.tsx        sobre mí + cifras
-  Services.tsx     servicios freelance
-  Projects.tsx     caso ZAKUMI
-  Process.tsx      metodología de gestión de proyectos
-  Tech.tsx         stack tecnológico
+  Services.tsx     servicios
+  Experience.tsx   Mindmarks Agency + tarjetas de marcas
+  Process.tsx      método de trabajo
+  Career.tsx       trayectoria administrativa
+  Tech.tsx         herramientas
   Faq.tsx          preguntas frecuentes
   Contact.tsx      CTA final
   Footer.tsx

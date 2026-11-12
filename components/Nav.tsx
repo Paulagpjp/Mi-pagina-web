@@ -6,8 +6,9 @@ import { profile, whatsappUrl } from "@/lib/content";
 const links = [
   { href: "#sobre-mi", label: "Sobre mí" },
   { href: "#servicios", label: "Servicios" },
-  { href: "#proyectos", label: "Proyectos" },
-  { href: "#tecnologias", label: "Tecnologías" },
+  { href: "#experiencia", label: "Experiencia" },
+  { href: "#metodo", label: "Método" },
+  { href: "#trayectoria", label: "Trayectoria" },
   { href: "#contacto", label: "Contacto" },
 ];
 

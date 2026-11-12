@@ -7,10 +7,10 @@ export default function Tech() {
     <section id="tecnologias" className="section py-24 sm:py-32">
       <Reveal>
         <SectionHead
-          eyebrow="Tecnologías"
+          eyebrow="Herramientas"
           title="Con qué"
-          accent="construyo."
-          lead="Herramientas que uso a diario en proyectos reales, no una lista para llenar el CV. Si trabajas con otras herramientas, me adapto."
+          accent="trabajo."
+          lead="Lo que uso a diario con las marcas que manejo y lo que mido en cada cuenta. Si tu equipo trabaja con otras herramientas, me adapto."
         />
       </Reveal>
 

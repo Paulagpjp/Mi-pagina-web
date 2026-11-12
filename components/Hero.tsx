@@ -23,7 +23,7 @@ export default function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-ink opacity-60" />
                 <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-ink" />
               </span>
-              Disponible para proyectos freelance
+              Disponible para nuevas marcas
             </span>
           )}
 
@@ -60,8 +60,11 @@ export default function Hero() {
             >
               Trabajemos juntos →
             </a>
-            <a href="#proyectos" className="btn-ghost bg-white">
+            <a href="#experiencia" className="btn-ghost bg-white">
               Ver mi trabajo
+            </a>
+            <a href={contact.cv} download className="btn-ghost bg-amber">
+              Hoja de vida ↓
             </a>
           </div>
 
@@ -69,7 +72,7 @@ export default function Hero() {
             <div>
               <dt className="eyebrow opacity-60">Rol</dt>
               <dd className="mt-1 font-bold leading-snug">
-                Cofundadora y Gestión de proyectos de ZAKUMI Studio
+                {profile.currentRole}
               </dd>
             </div>
             <div>
@@ -90,7 +93,7 @@ export default function Hero() {
               src={profile.photo}
               srcSet={`${profile.photoNarrow} 640w, ${profile.photo} 768w`}
               sizes="(min-width: 1024px) 460px, 380px"
-              alt={`Retrato de ${profile.name}, gestora de proyectos digitales y especialista en agentes de IA`}
+              alt={`Retrato de ${profile.name}, Community Manager`}
               width={768}
               height={1024}
               priority
@@ -103,14 +106,14 @@ export default function Hero() {
           <div className="sticker-sm absolute -bottom-6 -left-3 max-w-[220px] rotate-[-3deg] bg-cream px-4 py-3 sm:-left-8">
             <p className="display text-lg leading-tight">{profile.name}</p>
             <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.14em] text-magenta">
-              Project Manager · IA
+              Community Manager
             </p>
           </div>
 
           {/* Floating badge: rotating seal */}
           <div className="absolute -right-3 -top-8 hidden h-24 w-24 place-items-center rounded-full border-[3px] border-ink bg-violet text-white sm:grid">
             <span className="display animate-spin-slow text-[10px] leading-tight tracking-[0.1em]">
-              IA
+              CM
               <br />
               ✦
               <br />
@@ -132,20 +135,12 @@ export default function Hero() {
           LinkedIn
         </a>
         <a
-          href={contact.instagram}
+          href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="underline decoration-magenta decoration-[3px] underline-offset-4 hover:text-magenta"
         >
-          Instagram
-        </a>
-        <a
-          href={contact.zakumi}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline decoration-magenta decoration-[3px] underline-offset-4 hover:text-magenta"
-        >
-          zakumistudio.com
+          WhatsApp {contact.whatsappLabel}
         </a>
         <a
           href={`mailto:${contact.email}`}

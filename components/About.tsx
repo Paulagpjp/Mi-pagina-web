@@ -5,16 +5,16 @@ import { toneSolid, type Tone } from "@/lib/tones";
 
 const pillars = [
   {
-    title: "Ordeno el caos",
-    body: "La mayoría de los proyectos digitales no fracasan por falta de talento, sino por falta de gestión. Yo defino el alcance, corto lo que no aporta y hago que el proyecto llegue a una fecha real de entrega.",
+    title: "Estrategia antes que publicaciones",
+    body: "Cada parrilla parte de un objetivo: generar confianza, educar, mostrar el producto o vender. Si una pieza no empuja ese objetivo, no se publica.",
   },
   {
-    title: "Traduzco negocio a tecnología",
-    body: "Escucho el problema en el lenguaje de tu operación —«pierdo clientes porque no alcanzo a responder»— y lo devuelvo convertido en un sistema que lo resuelve.",
+    title: "Escribo como habla tu marca",
+    body: "Guiones y copys con el tono de cada cuenta: cercano para una inmobiliaria, claro y responsable para una financiera. La comunidad tiene que reconocer a la marca en cada texto.",
   },
   {
-    title: "Entrego cosas que funcionan",
-    body: "No entrego presentaciones ni promesas. Entrego agentes operando, flujos corriendo y sitios publicados, con documentación para que tu equipo los mantenga.",
+    title: "Mido y ajusto",
+    body: "Alcance, interacción, guardados, retención de reels y conversaciones iniciadas. Las métricas deciden qué se repite y qué cambia en la siguiente parrilla.",
   },
 ];
 
@@ -24,9 +24,9 @@ export default function About() {
       <Reveal>
         <SectionHead
           eyebrow="Sobre mí"
-          title="No solo construyo."
-          accent="Hago que se entregue."
-          lead="Vengo de la gestión de proyectos y me formé en inteligencia artificial aplicada. Esa combinación es lo que ofrezco: alguien que entiende el negocio, sabe qué se puede automatizar hoy y se encarga de que el proyecto llegue a producción."
+          title="No solo publico."
+          accent="Hago que tu marca converse."
+          lead="Estudié Marketing Digital y me formé en marketing con inteligencia artificial, que uso para crear contenido y automatizar redes. Antes pasé años en atención al cliente y administración: sé lo que es responderle a una persona a tiempo, y eso hago con la comunidad de cada marca."
         />
       </Reveal>
 

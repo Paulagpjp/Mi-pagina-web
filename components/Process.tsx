@@ -4,17 +4,17 @@ import { process } from "@/lib/content";
 
 export default function Process() {
   return (
-    <section id="gestion" className="relative overflow-hidden bg-violet py-24 text-cream sm:py-32">
+    <section id="metodo" className="relative overflow-hidden bg-violet py-24 text-cream sm:py-32">
       <div aria-hidden="true" className="dots absolute inset-0 opacity-50" />
 
       <div className="section relative">
         <Reveal>
           <SectionHead
             invert
-            eyebrow="Gestión de proyectos"
+            eyebrow="Método"
             title="Cómo trabajo"
             accent="contigo."
-            lead="Esta es la parte que casi nadie te cuenta y la que más define si un proyecto sale bien. Mi método es el mismo para un agente de IA que para un ecommerce completo."
+            lead="El mismo ciclo para una marca que se lanza desde cero que para una cuenta con años de historia: entender, planear, publicar y medir."
           />
         </Reveal>
 
@@ -39,8 +39,8 @@ export default function Process() {
         <Reveal delay={120}>
           <blockquote className="mx-auto mt-20 max-w-3xl text-center">
             <p className="display text-[2rem] leading-tight sm:text-[3rem]">
-              «Automatizar sin ordenar el proceso primero solo hace que{" "}
-              <span className="text-lime">el desorden vaya más rápido</span>.»
+              «Publicar sin medir es adivinar. Una buena parrilla es la que{" "}
+              <span className="text-lime">mejora cada mes</span>.»
             </p>
             <footer className="mt-6 text-sm font-bold uppercase tracking-[0.2em] opacity-70">
               — Paula Penagos Gómez

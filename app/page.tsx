@@ -3,7 +3,8 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import About from "@/components/About";
 import Services from "@/components/Services";
-import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
+import Career from "@/components/Career";
 import Process from "@/components/Process";
 import Tech from "@/components/Tech";
 import Faq from "@/components/Faq";
@@ -30,8 +31,9 @@ export default function Home() {
 
         <About />
         <Services />
-        <Projects />
+        <Experience />
         <Process />
+        <Career />
 
         <Marquee
           words={["Disponible para proyectos", "Recibiendo nuevos clientes", "Trabajo remoto"]}

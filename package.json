@@ -2,7 +2,7 @@
   "name": "paula-penagos-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Portafolio personal de Paula Penagos G\u00f3mez \u2014 gesti\u00f3n de proyectos digitales, agentes de IA y automatizaciones.",
+  "description": "Portafolio personal de Paula Penagos Gómez — Community Manager, estrategia de contenido y gestión de redes.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
